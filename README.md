@@ -29,13 +29,13 @@ Average time for 1 thread in bubble sort: 25211.8 milliseconds
 <br />Average time for 1 thread in insertion sort: 4970.5 milliseconds
 
 Average time for 2 threads in bubble sort: 6218.9 milliseconds
-Average time for 2 threads in insertion sort: 1356.1 milliseconds
+<br />Average time for 2 threads in insertion sort: 1356.1 milliseconds
 
 Average time for 4 threads in bubble sort: 1860.1 milliseconds
-Average time for 4 threads in insertion sort: 435.9 milliseconds
+<br />Average time for 4 threads in insertion sort: 435.9 milliseconds
 
 Average time for 8 threads in bubble sort: 678 milliseconds
-Average time for 8 threads in insertion sort: 194 milliseconds
+<br />Average time for 8 threads in insertion sort: 194 milliseconds
 
 
 Based on these average times, there is a clear and negative correlation between the number of threads and the time it takes to sort the inputted array. When using a constant of 100000 integers, more threads significantly lower the time to sort. In other words, multi-threading performance is a lot faster than single-threading performance. This is evident for both bubble sort and insertion sort. For bubble sort, the times were 25211.8 milliseconds for one thread, 6218.9 milliseconds for two threads, 1860.1 milliseconds for four threads, and 678 milliseconds for eight threads. For insertion sort, the times were 4970.5 milliseconds for one thread, 1356.1 milliseconds for two threads, 435.9 milliseconds for four threads, and 194 milliseconds for eight threads. The relationship is not linear, but more exponential since the times drop by a large factor with more threads. Even with the threads, bubble sort is a lot slower than insertion sort.
