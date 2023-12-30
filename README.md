@@ -1,16 +1,19 @@
 # Sorting Integers using threads from pthread library
 
-**Purpose:** Takes an input file of integers with the first line being the size of the input, and
+**Purpose:** 
+Takes an input file of integers with the first line being the size of the input, and
 first partitions the array into sublists using threads. These threads then sort their sublist
 of the array by bubble sort and insertion sort. Afterward, the threads are joined,
 and the sublists are merged to create one vast sorted array. The sorted arrays are then
 written onto a file. The threads and sorting are also timed to see if there is a correlation
 between the number of threads and the time to sort.
 
-**Input:** The user enters an input text file with the first line as the number of integers on the
+**Input:** 
+The user enters an input text file with the first line as the number of integers on the
 file and an integer to represent the number of threads to perform the sort.
 
-**Output:** The program will output eight text files, 2 for each thread number (1,2,4 or 8 threads)
+**Output:** 
+The program will output eight text files, 2 for each thread number (1,2,4 or 8 threads)
 and within the two files, one file will be of bubble sort and the other will be insertion sort.
 The program also outputs messages of the times it took for both the partition made by the threads
 and the time it took for insertion sort and bubble sort to sort the input text of integers in milliseconds.
