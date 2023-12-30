@@ -1,6 +1,6 @@
 # Sorting Integers using threads from pthread library
 
-**Purpose:** 
+### Purpose:
 Takes an input file of integers with the first line being the size of the input, and
 first partitions the array into sublists using threads. These threads then sort their sublist
 of the array by bubble sort and insertion sort. Afterward, the threads are joined,
@@ -8,26 +8,25 @@ and the sublists are merged to create one vast sorted array. The sorted arrays a
 written onto a file. The threads and sorting are also timed to see if there is a correlation
 between the number of threads and the time to sort.
 
-**Input:** 
+### Input: 
 The user enters an input text file with the first line as the number of integers on the
 file and an integer to represent the number of threads to perform the sort.
 
-**Output:** 
+### Output:
 The program will output eight text files, 2 for each thread number (1,2,4 or 8 threads)
 and within the two files, one file will be of bubble sort and the other will be insertion sort.
 The program also outputs messages of the times it took for both the partition made by the threads
 and the time it took for insertion sort and bubble sort to sort the input text of integers in milliseconds.
 
 
-**To compile and run the program, here is what you should do:**
+### To compile and run the program, here is what you should do:
 1. gcc main.c -o a.out
 2. ./a.out *(filename) (number of threads)*
 
 
-**Analysis of threads and sorting algorithms (used 100000 ints to be sorted):**
-
+### Analysis of threads and sorting algorithms (used 100000 ints to be sorted):
 Average time for 1 thread in bubble sort: 25211.8 milliseconds
-Average time for 1 thread in insertion sort: 4970.5 milliseconds
+<br />Average time for 1 thread in insertion sort: 4970.5 milliseconds
 
 Average time for 2 threads in bubble sort: 6218.9 milliseconds
 Average time for 2 threads in insertion sort: 1356.1 milliseconds
