@@ -25,6 +25,7 @@ and the time it took for insertion sort and bubble sort to sort the input text o
 
 
 **Analysis of threads and sorting algorithms (used 100000 ints to be sorted):**
+
 Average time for 1 thread in bubble sort: 25211.8 milliseconds
 Average time for 1 thread in insertion sort: 4970.5 milliseconds
 
