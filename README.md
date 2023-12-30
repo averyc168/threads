@@ -7,23 +7,21 @@ of the array by bubble sort and insertion sort. Afterward, the threads are joine
 and the sublists are merged to create one vast sorted array. The sorted arrays are then
 written onto a file. The threads and sorting are also timed to see if there is a correlation
 between the number of threads and the time to sort.
-<br />
+
 ### Input: 
 The user enters an input text file with the first line as the number of integers on the
 file and an integer to represent the number of threads to perform the sort.
-<br />
+
 ### Output:
 The program will output eight text files, 2 for each thread number (1,2,4 or 8 threads)
 and within the two files, one file will be of bubble sort and the other will be insertion sort.
 The program also outputs messages of the times it took for both the partition made by the threads
 and the time it took for insertion sort and bubble sort to sort the input text of integers in milliseconds.
 
-<br />
 ### To compile and run the program, here is what you should do:
 1. gcc main.c -o a.out
 2. ./a.out *(filename) (number of threads)*
 
-<br />
 ### Analysis of threads and sorting algorithms (used 100000 ints to be sorted):
 Average time for 1 thread in bubble sort: 25211.8 milliseconds
 <br />Average time for 1 thread in insertion sort: 4970.5 milliseconds
